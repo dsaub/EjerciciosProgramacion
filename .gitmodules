@@ -1,0 +1,3 @@
+[submodule "inputUtils"]
+	path = inputUtils
+	url = https://gitlab.elordenador.org/programacion/inputUtils
