@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group = 'me.elordenador'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    extraLibs
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation files("inputUtils/InputUtils.jar")
+    extraLibs files("inputUtils/InputUtils.jar")
+}
+jar {
+    manifest {
+        attributes('Main-Class': 'me.elordenador.megajar.MegaJAR')
+    }
+    from {
+        configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+
+    }
+}
+test {
+    useJUnitPlatform()
+}
