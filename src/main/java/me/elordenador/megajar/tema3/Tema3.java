@@ -6,6 +6,7 @@ import me.elordenador.megajar.tema3.paresonones.ParesONones;
 import me.elordenador.megajar.tema3.positivoynegativo.Positivoynegativo;
 import me.elordenador.megajar.tema3.raizcuadrada.RaizCuadrada;
 import me.elordenador.megajar.tema3.restar.Restar;
+import me.elordenador.megajar.tema3.tablademultiplicar.TablaDeMultiplicar;
 import me.elordenador.megajar.utils.ScrUtils;
 
 public class Tema3 {
@@ -58,14 +59,11 @@ public class Tema3 {
         System.out.println("44. Juego de Nim");
         int selection = InputUtils.inputInt("Seleccione: ");
         switch (selection) {
-            case 1:
-                Positivoynegativo.main(args);
-            case 2:
-                RaizCuadrada.main(args);
-            case 3:
-                Restar.main(args);
-            case 12:
-                ParesONones.main(args);
+            case 1: Positivoynegativo.main(args);
+            case 2: RaizCuadrada.main(args);
+            case 3: Restar.main(args);
+            case 12: ParesONones.main(args);
+            case 14: TablaDeMultiplicar.main(args);
         }
     }
 }
