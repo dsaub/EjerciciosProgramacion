@@ -2,6 +2,7 @@ package me.elordenador.megajar.tema3;
 
 import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
+import me.elordenador.megajar.tema3.paresonones.ParesONones;
 import me.elordenador.megajar.tema3.positivoynegativo.Positivoynegativo;
 import me.elordenador.megajar.tema3.raizcuadrada.RaizCuadrada;
 import me.elordenador.megajar.tema3.restar.Restar;
@@ -63,6 +64,8 @@ public class Tema3 {
                 RaizCuadrada.main(args);
             case 3:
                 Restar.main(args);
+            case 12:
+                ParesONones.main(args);
         }
     }
 }
