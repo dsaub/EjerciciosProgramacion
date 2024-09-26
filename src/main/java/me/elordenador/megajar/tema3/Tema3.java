@@ -2,11 +2,14 @@ package me.elordenador.megajar.tema3;
 
 import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
+import me.elordenador.megajar.tema3.AnoBisiesto.AnoBisiesto;
 import me.elordenador.megajar.tema3.acumulador.AcumuladorSimple;
 import me.elordenador.megajar.tema3.estadistica.EstadisticaBasica;
 import me.elordenador.megajar.tema3.notasdeclase.NotasDeClase;
 import me.elordenador.megajar.tema3.numerodelasuerte.NumeroDeLaSuerte;
+import me.elordenador.megajar.tema3.numerosordenados.NumerosOrdenados;
 import me.elordenador.megajar.tema3.paresonones.ParesONones;
+import me.elordenador.megajar.tema3.partedecimal.ParteDecimal;
 import me.elordenador.megajar.tema3.positivoynegativo.Positivoynegativo;
 import me.elordenador.megajar.tema3.raizcuadrada.RaizCuadrada;
 import me.elordenador.megajar.tema3.restar.Restar;
@@ -63,15 +66,18 @@ public class Tema3 {
         System.out.println("44. Juego de Nim");
         int selection = InputUtils.inputInt("Seleccione: ");
         switch (selection) {
-            case 1: Positivoynegativo.main(args);
-            case 2: RaizCuadrada.main(args);
-            case 3: Restar.main(args);
-            case 12: ParesONones.main(args);
-            case 14: TablaDeMultiplicar.main(args);
-            case 15: AcumuladorSimple.main(args);
-            case 17: EstadisticaBasica.main(args);
-            case 18: NotasDeClase.main(args);
-            case 21: NumeroDeLaSuerte.main(args);
+            case 1: Positivoynegativo.main(args); break;
+            case 2: RaizCuadrada.main(args); break;
+            case 3: Restar.main(args); break;
+            case 4: AnoBisiesto.main(args); break;
+            case 5: ParteDecimal.main(args); break;
+            case 6: NumerosOrdenados.main(args); break;
+            case 12: ParesONones.main(args); break;
+            case 14: TablaDeMultiplicar.main(args); break;
+            case 15: AcumuladorSimple.main(args); break;
+            case 17: EstadisticaBasica.main(args); break;
+            case 18: NotasDeClase.main(args); break;
+            case 21: NumeroDeLaSuerte.main(args); break;
         }
     }
 }
