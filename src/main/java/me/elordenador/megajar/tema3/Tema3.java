@@ -2,6 +2,10 @@ package me.elordenador.megajar.tema3;
 
 import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
+import me.elordenador.megajar.tema3.acumulador.AcumuladorSimple;
+import me.elordenador.megajar.tema3.estadistica.EstadisticaBasica;
+import me.elordenador.megajar.tema3.notasdeclase.NotasDeClase;
+import me.elordenador.megajar.tema3.numerodelasuerte.NumeroDeLaSuerte;
 import me.elordenador.megajar.tema3.paresonones.ParesONones;
 import me.elordenador.megajar.tema3.positivoynegativo.Positivoynegativo;
 import me.elordenador.megajar.tema3.raizcuadrada.RaizCuadrada;
@@ -64,6 +68,10 @@ public class Tema3 {
             case 3: Restar.main(args);
             case 12: ParesONones.main(args);
             case 14: TablaDeMultiplicar.main(args);
+            case 15: AcumuladorSimple.main(args);
+            case 17: EstadisticaBasica.main(args);
+            case 18: NotasDeClase.main(args);
+            case 21: NumeroDeLaSuerte.main(args);
         }
     }
 }
