@@ -4,10 +4,12 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.tema3.AnoBisiesto.AnoBisiesto;
 import me.elordenador.megajar.tema3.acumulador.AcumuladorSimple;
+import me.elordenador.megajar.tema3.eratostenes.Eratostenes;
 import me.elordenador.megajar.tema3.estadistica.EstadisticaBasica;
 import me.elordenador.megajar.tema3.notasdeclase.NotasDeClase;
 import me.elordenador.megajar.tema3.numerodelasuerte.NumeroDeLaSuerte;
 import me.elordenador.megajar.tema3.numerosordenados.NumerosOrdenados;
+import me.elordenador.megajar.tema3.numerosprimos.NumerosPrimos;
 import me.elordenador.megajar.tema3.paresonones.ParesONones;
 import me.elordenador.megajar.tema3.partedecimal.ParteDecimal;
 import me.elordenador.megajar.tema3.positivoynegativo.Positivoynegativo;
@@ -78,6 +80,8 @@ public class Tema3 {
             case 17: EstadisticaBasica.main(args); break;
             case 18: NotasDeClase.main(args); break;
             case 21: NumeroDeLaSuerte.main(args); break;
+            case 22: NumerosPrimos.main(args); break;
+            case 23: Eratostenes.main(args); break;
         }
     }
 }
