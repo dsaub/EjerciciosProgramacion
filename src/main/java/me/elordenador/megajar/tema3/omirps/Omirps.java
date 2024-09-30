@@ -22,7 +22,7 @@ public class Omirps {
         if (PrimoUtil.esPrimo(Integer.parseInt(texto))) {
             String[] array = texto.split("");
             texto = "";
-            for (int i = array.length-1; i > 0; i--) {
+            for (int i = array.length-1; i >= 0; i--) {
                 texto += array[i];
             }
             System.out.println("Numero inverso: " + texto);
