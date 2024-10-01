@@ -4,8 +4,11 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.tema3.Tema3;
 
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
+
 public class MegaJAR {
-    public static void main(String[] args) throws IGotTextException {
+    public static void main(String[] args) throws IGotTextException, IOException, InterruptedException, UnsupportedFlavorException {
         int option = 0;
         if (args.length == 0) { // Comprobaremos si hay algun argumento ya que si lo hay podemos ir directamente al programa sin pasar por los menus
             printMenu();

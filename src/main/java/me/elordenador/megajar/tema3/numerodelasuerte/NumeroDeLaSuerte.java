@@ -21,12 +21,14 @@ public class NumeroDeLaSuerte {
             System.exit(1);
         }
         int dia, mes, ano;
+        dia = 0; mes = 0; ano = 0; // El programa no compila si no lo declaro como 0 de primeras
         try {
             dia = Integer.parseInt(partes[0]);
             mes = Integer.parseInt(partes[1]);
             ano = Integer.parseInt(partes[2]);
         } catch (java.lang.NumberFormatException e) { // We NEED the values to be numbers.
             System.err.println("Uno de los valores tenia letras, por favor, decimal, que no eres un robot.");
+
             System.exit(1);
         }
         int numeroprincipal = dia+mes+ano;

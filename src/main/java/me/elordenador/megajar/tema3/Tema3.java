@@ -6,8 +6,10 @@ import me.elordenador.megajar.tema3.AnoBisiesto.AnoBisiesto;
 import me.elordenador.megajar.tema3.acumulador.AcumuladorSimple;
 import me.elordenador.megajar.tema3.eratostenes.Eratostenes;
 import me.elordenador.megajar.tema3.estadistica.EstadisticaBasica;
+import me.elordenador.megajar.tema3.memoria.JuegoDeMemoria;
 import me.elordenador.megajar.tema3.notasdeclase.NotasDeClase;
 import me.elordenador.megajar.tema3.numerodelasuerte.NumeroDeLaSuerte;
+import me.elordenador.megajar.tema3.numerosecreto.NumeroSecreto;
 import me.elordenador.megajar.tema3.numerosordenados.NumerosOrdenados;
 import me.elordenador.megajar.tema3.numerosprimos.NumerosPrimos;
 import me.elordenador.megajar.tema3.omirps.Omirps;
@@ -19,8 +21,11 @@ import me.elordenador.megajar.tema3.restar.Restar;
 import me.elordenador.megajar.tema3.tablademultiplicar.TablaDeMultiplicar;
 import me.elordenador.megajar.utils.ScrUtils;
 
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.io.IOException;
+
 public class Tema3 {
-    public static void main(String[] args) throws IGotTextException {
+    public static void main(String[] args) throws IGotTextException, IOException, InterruptedException, UnsupportedFlavorException {
         ScrUtils.clear();
         int option = 0;
         System.out.println(args.length);
@@ -92,6 +97,8 @@ public class Tema3 {
             case 22: NumerosPrimos.main(args); break;
             case 23: Eratostenes.main(args); break;
             case 24: Omirps.main(args); break;
+            case 28: NumeroSecreto.main(args); break;
+            case 41: JuegoDeMemoria.main(args); break;
             default: System.out.println("Ese numero es incorrecto");
         }
     }
