@@ -7,6 +7,11 @@ import me.elordenador.megajar.utils.ScrUtils;
 import java.util.Arrays;
 import java.util.Collections;
 
+/**
+ * This program will sort 3 numbers from max to min and then say the biggest the intermediate and the minimum.
+ * @author Daniel Sánchez
+ * @version 1.0
+ */
 public class MayorMenorMediano {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();
@@ -18,5 +23,6 @@ public class MayorMenorMediano {
         }
 
         Arrays.sort(intArray, Collections.reverseOrder());
+        System.out.println("Max: "+intArray[0]+", Med: "+intArray[1]+", Min: "+intArray[2]);
     }
 }

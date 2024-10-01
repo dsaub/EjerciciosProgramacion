@@ -3,6 +3,11 @@ package me.elordenador.megajar.tema3.partedecimal;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * This algorithm will ask you if the supplied number haves a decimal part
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class ParteDecimal {
     public static void main(String[] args) {
         ScrUtils.clear();

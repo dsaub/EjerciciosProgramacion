@@ -4,6 +4,11 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * Algorithm for checking if year haves 366 days instead of 365.
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class AnoBisiesto {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();
@@ -17,6 +22,12 @@ public class AnoBisiesto {
         }
     }
 
+    /**
+     * This method will check if the year you supply haves 366 days instead of 365.
+     * @author Daniel Sánchez Úbeda
+     * @param ano The year to supply
+     * @return boolean, true if the day haves 366 days, otherwise false.
+     */
     public static boolean esBisiesto(int ano) {
         if (ano % 4 == 0) {
             return ano % 100 == 0 && ano % 400 == 0;

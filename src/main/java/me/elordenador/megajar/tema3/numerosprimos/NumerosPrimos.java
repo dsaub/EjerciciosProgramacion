@@ -4,6 +4,11 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * This algorithm will ask the user for a number and then say if that's a Prime Number.
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class NumerosPrimos {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();

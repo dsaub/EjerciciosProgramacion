@@ -4,6 +4,11 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * Algorihm that couns all digits from a number on a string.
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class ContarCifras {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();

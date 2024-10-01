@@ -4,6 +4,11 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * This algorithm will check if that is a par number or not.
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class ParesONones {
     public static void main(String[] args) throws IGotTextException {
         String texto = "";

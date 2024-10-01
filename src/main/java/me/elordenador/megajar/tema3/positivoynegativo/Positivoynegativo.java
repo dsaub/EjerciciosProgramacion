@@ -4,7 +4,13 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * This algorithm will check if that number is positive or negative
+ * @author Daniel Sánchez
+ * @version 1.0
+ */
 public class Positivoynegativo {
+
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();
         System.out.println("Bienvenidos al programa de Positivo y Negativo");

@@ -5,6 +5,11 @@ import me.elordenador.megajar.utils.ScrUtils;
 
 import java.util.ArrayList;
 
+/**
+ * This algorithm will ask you 30 notes from your students and will say how many suspended and how many approved.
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class NotasDeClase {
     public static void main(String[] args) {
         int aprobados = 0;

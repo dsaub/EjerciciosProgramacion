@@ -6,17 +6,27 @@ import me.elordenador.megajar.tema3.Tema3;
 
 public class MegaJAR {
     public static void main(String[] args) throws IGotTextException {
-        printMenu();
-        int option = InputUtils.inputInt("Seleccione: ");
-        if (option == 1) {
-            Tema3.main(args);
+        int option = 0;
+        if (args.length == 0) { // Comprobaremos si hay algun argumento ya que si lo hay podemos ir directamente al programa sin pasar por los menus
+            printMenu();
+            option = InputUtils.inputInt("Seleccione: ");
+
+        } else {
+            String variable[] = args[0].split("\\.");
+            option = Integer.parseInt(variable[0]);
         }
+
+        switch (option) {
+            case 3: Tema3.main(args); break;
+            default: System.out.println("Option doesn't exist");
+        }
+
     }
 
     public static void printMenu() {
         System.out.println("Menu:\n" +
                 "---------------------------\n" +
-                "1. Tema 3\n" +
+                "3. Tema 3\n" +
                 "\n");
 
     }

@@ -7,6 +7,11 @@ import me.elordenador.megajar.utils.ScrUtils;
 import java.util.ArrayList;
 import java.util.Comparator;
 
+/**
+ * This algorithm will ask for 3 numbers, then sort them for you.
+ * @author Daniel Sánchez
+ * @version 1.0
+ */
 public class NumerosOrdenados {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();

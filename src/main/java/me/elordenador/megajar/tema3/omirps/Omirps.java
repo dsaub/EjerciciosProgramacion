@@ -4,6 +4,11 @@ import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.tema3.numerosprimos.PrimoUtil;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * This algorithm will check if that's a prime number AND the inverse is also a prime number.
+ * @author Daniel Sánchez Úbeda
+ * @version 1.0
+ */
 public class Omirps {
     public static void main(String[] args) {
         ScrUtils.clear();
@@ -16,7 +21,7 @@ public class Omirps {
             texto = String.valueOf(Math.abs(Integer.parseInt(texto)));
         } catch (java.lang.NumberFormatException e) {
             System.err.println("Hay letras :>");
-            return;
+            System.exit(0);
         }
 
         if (PrimoUtil.esPrimo(Integer.parseInt(texto))) {

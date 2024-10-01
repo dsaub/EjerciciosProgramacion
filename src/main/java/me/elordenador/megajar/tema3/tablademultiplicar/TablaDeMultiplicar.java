@@ -4,6 +4,11 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.utils.ScrUtils;
 
+/**
+ * This algorithm will print the multiplication table of a number
+ * @author Daniel Sánchez
+ * @version 1.0
+ */
 public class TablaDeMultiplicar {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();
