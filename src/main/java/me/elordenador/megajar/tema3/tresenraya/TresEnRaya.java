@@ -170,6 +170,9 @@ public class TresEnRaya {
     }
 
     private void maquina() {
+
+        Bot botardo = new Bot(tablero, "O");
+
         boolean salida = false;
         boolean firstTurn = true;
 
@@ -197,8 +200,9 @@ public class TresEnRaya {
                     System.out.println("Han tomado esa posición, intentalo de nuevo");
                 }
             } else {
-                // Bot no implementado
-
+                botardo.update(tablero);
+                tablero = botardo.play();
+                firstTurn = !firstTurn;
             }
 
 
@@ -220,6 +224,7 @@ public class TresEnRaya {
                     }
                 }
                 if (vacios == 0) {
+                    tablero.printTable();
                     System.out.println("Hay tablas");
                     salida = true;
                 }

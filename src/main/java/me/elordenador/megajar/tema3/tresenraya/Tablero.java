@@ -31,7 +31,9 @@ public class Tablero {
         }
     }
 
-
+    public boolean checkState(int x, int y, String state) {
+        return getCell(x,y).state.equals(state);
+    }
 
     public Element getCell(int x, int y) {
         return tablero[x][y];
