@@ -16,8 +16,8 @@ configurations {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation files("inputUtils/InputUtils.jar")
-    extraLibs files("inputUtils/InputUtils.jar")
+    implementation files("dependencies/InputUtils.jar")
+    extraLibs files("dependencies/InputUtils.jar")
 }
 jar {
     manifest {

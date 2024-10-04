@@ -19,6 +19,7 @@ import me.elordenador.megajar.tema3.positivoynegativo.Positivoynegativo;
 import me.elordenador.megajar.tema3.raizcuadrada.RaizCuadrada;
 import me.elordenador.megajar.tema3.restar.Restar;
 import me.elordenador.megajar.tema3.tablademultiplicar.TablaDeMultiplicar;
+import me.elordenador.megajar.tema3.tresenraya.TresEnRaya;
 import me.elordenador.megajar.utils.ScrUtils;
 
 import java.awt.datatransfer.UnsupportedFlavorException;
@@ -99,6 +100,7 @@ public class Tema3 {
             case 24: Omirps.main(args); break;
             case 28: NumeroSecreto.main(args); break;
             case 41: JuegoDeMemoria.main(args); break;
+            case 42: TresEnRaya.main(args); break;
             default: System.out.println("Ese numero es incorrecto");
         }
     }
