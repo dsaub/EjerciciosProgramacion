@@ -73,19 +73,26 @@ public class TresEnRaya {
 
             // Actualizamos el GANAR
 
+            tablero.updateTablero();
+            String winner = tablero.getWinner();
+            if (!winner.equals(" ")) {
+                System.out.println("GANADOR: "+winner);
+                salida = true;
+            }
+            if (!salida) {
+                int vacios = 0;
+                for (int x1 = 0; x1 <= 2; x1++) {
+                    for (int y1 = 0; y1<= y; y1++) {
 
-            int vacios = 0;
-            for (int x1 = 0; x1 <= 2; x1++) {
-                for (int y1 = 0; y1<= y; y1++) {
-
-                    if (!tablero.getCell(x1,y1).isTaken()) {
-                        vacios++;
+                        if (!tablero.getCell(x1,y1).isTaken()) {
+                            vacios++;
+                        }
                     }
                 }
-            }
-            if (vacios == 0) {
-                System.out.println("Hay tablas");
-                salida = true;
+                if (vacios == 0) {
+                    System.out.println("Hay tablas");
+                    salida = true;
+                }
             }
 
 
