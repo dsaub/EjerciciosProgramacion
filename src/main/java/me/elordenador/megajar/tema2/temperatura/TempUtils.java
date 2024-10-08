@@ -5,6 +5,6 @@ public class TempUtils {
         return (farenheit-32)/1.8;
     }
     public static double toFarenheit(double celsius) {
-
+        return (1.8)*celsius+32;
     }
 }
