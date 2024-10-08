@@ -2,6 +2,7 @@ package me.elordenador.megajar;
 
 import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
+import me.elordenador.megajar.tema2.Tema2;
 import me.elordenador.megajar.tema3.Tema3;
 
 import java.awt.datatransfer.UnsupportedFlavorException;
@@ -20,6 +21,7 @@ public class MegaJAR {
         }
 
         switch (option) {
+            case 2: Tema2.main(args); break;
             case 3: Tema3.main(args); break;
             default: System.out.println("Option doesn't exist");
         }
@@ -29,6 +31,7 @@ public class MegaJAR {
     public static void printMenu() {
         System.out.println("Menu:\n" +
                 "---------------------------\n" +
+                "2. Tema 2\n" +
                 "3. Tema 3\n" +
                 "\n");
 

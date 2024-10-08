@@ -20,12 +20,14 @@ public class TresEnRaya {
         System.out.println("1. Jugador vs Jugador");
         System.out.println("2. Jugador vs Maquina (Malardo)");
         System.out.println("3. Jugador vs Maquina");
+        System.out.println("4. GUI");
 
         int input = InputUtils.inputInt("> ");
         switch (input) {
             case 1: instance.twoPlayers(); break;
             case 2: instance.maquinamalarda(); break;
             case 3: instance.maquina(); break;
+            case 4: TresEnInterfaz.main(args); break;
         }
     }
 

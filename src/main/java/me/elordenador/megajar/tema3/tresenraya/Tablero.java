@@ -16,9 +16,10 @@ public class Tablero {
     }
 
     public void printTable() {
+        System.out.println("  0   1   2");
         for (int y = 0; y <= 2; y++) {
-            System.out.println(tablero[0][y].state+" | "+tablero[1][y].state+" | "+tablero[2][y].state);
-            System.out.println("--+---+--");
+            System.out.println(y + " " + tablero[0][y].state+" | "+tablero[1][y].state+" | "+tablero[2][y].state);
+            System.out.println(" ---+---+--");
         }
     }
 
