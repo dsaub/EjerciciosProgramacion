@@ -17,9 +17,9 @@ public class Bot {
         this.tablero = tablero;
     }
     public Tablero play() {
-        if (!regla1()) { // No se ha cumplido la primera regla, ir a la siguiente.
-            if (!regla3()) {
-                if (!regla2()) {
+        if (!regla3()) { // No se ha cumplido la primera regla, ir a la siguiente.
+            if (!regla2()) {
+                if (!regla1()) {
                     random();
                 }
             }

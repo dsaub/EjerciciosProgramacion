@@ -23,6 +23,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation files("dependencies/InputUtils.jar")
     extraLibs files("dependencies/InputUtils.jar")
+    implementation files("dependencies/AudioPlayer.jar")
+    extraLibs files("dependencies/AudioPlayer.jar")
 
 }
 jar {

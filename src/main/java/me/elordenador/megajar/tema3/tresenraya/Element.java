@@ -16,7 +16,9 @@ public class Element {
      * Returns true if someone has taken that position
      * @return boolean true if someone taken it or false if it's free.
      */
-    public boolean isTaken() { return !state.equals(" "); }
+    public boolean isTaken() {
+        System.out.println("Cell at position x: "+x+" y: "+y+" has state "+state);
+        return !state.equals(" "); }
 
     /**
      * Sets a state
@@ -28,6 +30,8 @@ public class Element {
     public void update(Tablero array) {
         parent = array;
     }
-
+    public String getState() {
+        return state;
+    }
 
 }

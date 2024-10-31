@@ -41,6 +41,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.elordenador.megajar.tema3.tresenraya.gui.Controller">
   <children>
@@ -49,13 +50,14 @@
         <Menu mnemonicParsing="false" text="File">
           <items>
                   <MenuItem mnemonicParsing="false" text="New Game" />
+                  <MenuItem fx:id="mute_btn" mnemonicParsing="false" onAction="#mutebtnpressed" text="Mute Music" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
+            <MenuItem fx:id="quit" mnemonicParsing="false" onAction="#onQuitMenuPress" text="Quit" />
           </items>
         </Menu>
             <Menu mnemonicParsing="false" text="Help">
               <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#onAboutMenuPress" text="About" />
               </items>
             </Menu>
       </menus>
@@ -72,15 +74,42 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="celda_0_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" />
-            <Button fx:id="celda_1_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" />
-            <Button fx:id="celda_2_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" />
-            <Button fx:id="celda_1_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.rowIndex="1" />
-            <Button fx:id="celda_1_1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="celda_1_2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button fx:id="celda_2_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.rowIndex="2" />
-            <Button fx:id="celda_2_1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="celda_2_2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="cell_0_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_1_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.columnIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_2_0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.columnIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_0_1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_1_1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_2_1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_0_2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_1_2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
+            <Button fx:id="cell_2_2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCellPress" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="30.0" />
+               </font></Button>
          </children>
       </GridPane>
   </children>

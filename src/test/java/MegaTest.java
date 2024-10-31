@@ -15,5 +15,4 @@ public class MegaTest {
         }
         Assertions.assertEquals(1, finished);
     }
-
 }
