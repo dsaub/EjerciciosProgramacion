@@ -4,6 +4,7 @@ package me.elordenador.megajar.tema6;
 
 import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
+import me.elordenador.megajar.tema6.contarletras.ContarLetras;
 import me.elordenador.megajar.tema6.descomponertexto.Descomponer;
 import me.elordenador.megajar.utils.ScrUtils;
 
@@ -26,6 +27,7 @@ public class Tema6 {
         switch (option) {
             case 1: TablaMultiplicarFichero.main(args); break;
             case 2: Descomponer.main(args); break;
+            case 3: ContarLetras.main(args); break;
             default: System.out.println("Ese numero es incorrecto");
         }
     }
