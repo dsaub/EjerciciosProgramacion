@@ -9,7 +9,6 @@ public class PrimoUtil {
     /**
      * This method will determine if a supplied number is positive or negative
      * @author Daniel Sánchez
-     * @version 1.0
      * @param n Number to check
      * @return boolean, will be true if that's a prime number, otherwise will return false.
      */
