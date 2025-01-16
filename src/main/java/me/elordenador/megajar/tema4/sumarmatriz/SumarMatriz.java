@@ -6,7 +6,7 @@ import me.elordenador.megajar.utils.ScrUtils;
 import java.util.Scanner;
 
 public class SumarMatriz {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws InterruptedException {
         int[][] matriz1 = new int[5][10];
         int[][] matriz2 = new int[5][10];

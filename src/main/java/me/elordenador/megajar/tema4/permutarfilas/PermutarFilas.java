@@ -24,7 +24,8 @@ public class PermutarFilas {
                 try {
                     matriz[c][f] = sc.nextInt();
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    System.err.println("Hubo un error al leer la linea");
+                    System.exit(13);
                 }
                 sc.nextLine();
             }

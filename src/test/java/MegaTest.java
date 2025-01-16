@@ -11,7 +11,7 @@ public class MegaTest {
             ScrUtils.clear();
             finished = 1;
         } catch (Exception e) {
-
+            System.err.println("I CANNOT CLEAR SCREEN");
         }
         Assertions.assertEquals(1, finished);
     }

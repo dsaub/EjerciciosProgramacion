@@ -77,7 +77,7 @@ public class Tema3 {
             System.out.println("44. Juego de Nim");
             option = InputUtils.inputInt("Seleccione: ");
         } else {
-            String variable[] = args[0].split("\\.");
+            String[] variable = args[0].split("\\.");
             option = Integer.parseInt(variable[1]);
         }
 

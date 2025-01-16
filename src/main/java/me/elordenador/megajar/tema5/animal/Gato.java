@@ -28,6 +28,7 @@ public class Gato extends Animal {
         System.out.println("Hola, soy " + getNombre() + " y tengo " + getEdad() + " años y tengo " + vidas + " vidas");
     }
 
+    @Override
     public Gato clone() {
         return new Gato(getNombre(), getEdad());
     }

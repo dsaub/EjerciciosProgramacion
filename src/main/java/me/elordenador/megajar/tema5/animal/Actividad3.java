@@ -1,6 +1,6 @@
 package me.elordenador.megajar.tema5.animal;
 
-import java.util.ArrayList;
+
 
 public class Actividad3 {
     public static void main(String[] args) {

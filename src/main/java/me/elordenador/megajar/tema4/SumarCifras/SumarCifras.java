@@ -25,7 +25,8 @@ public class SumarCifras {
                 try {
                     matriz[f][c] = sc.nextInt();
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    System.err.println("Hubo un error al leer la linea");
+                    System.exit(13);
                 }
                 sc.nextLine();
             }
@@ -49,7 +50,7 @@ public class SumarCifras {
     }
 
     public static int[] sumarMatrizColumnas(int[][] matriz) {
-        int resultado[] = new int[matriz[0].length];
+        int[] resultado = new int[matriz[0].length];
         for (int y = 0; y < matriz[0].length; y++) {
             resultado[y] = 0;
             for (int x = 0; x < matriz.length; x++) {

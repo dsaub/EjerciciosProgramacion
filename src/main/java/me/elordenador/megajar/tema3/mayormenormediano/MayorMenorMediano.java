@@ -15,7 +15,7 @@ import java.util.Collections;
 public class MayorMenorMediano {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();
-        Integer intArray[] = new Integer[3];
+        Integer[] intArray = new Integer[3];
         System.out.println("Este programa te va a pedir 3 numeros, te va a calcular cual es el mayor, el menor y el mediano");
         for (int i = 0; i < 2; i++) {
             System.out.println("Dime un numero");

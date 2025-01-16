@@ -127,7 +127,7 @@ public class TresEnRaya {
                     System.out.println("Han tomado esa posición, intentalo de nuevo");
                 } else {
                     tablero.getCell(x,y).setState(state);
-                    firstTurn = !firstTurn;
+                    firstTurn = false;
                 }
             } else {
                 boolean salida2 = false;
@@ -135,7 +135,7 @@ public class TresEnRaya {
                     x = (int) Math.floor(Math.random()*2);
                     y = (int) Math.floor(Math.random()*2);
                     if (tablero.try_to_take(x,y,state)) {
-                        firstTurn = !firstTurn;
+                        firstTurn = true;
                         salida2 = true;
                     }
                 }
@@ -197,14 +197,14 @@ public class TresEnRaya {
                 x = Integer.parseInt(coordenadas_sep[0]);
                 y = Integer.parseInt(coordenadas_sep[1]);
                 if (tablero.try_to_take(x,y, state)) {
-                    firstTurn = !firstTurn;
+                    firstTurn = false;
                 } else {
                     System.out.println("Han tomado esa posición, intentalo de nuevo");
                 }
             } else {
                 botardo.update(tablero);
                 tablero = botardo.play();
-                firstTurn = !firstTurn;
+                firstTurn = true;
             }
 
 

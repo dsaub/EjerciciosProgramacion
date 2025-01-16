@@ -18,10 +18,10 @@ public class Tema2 {
             option = Integer.parseInt(args[0].split("\\.")[1]);
 
         }
-
-        switch (option) {
-            case 1: Temperatura.main(args); break;
-            default: System.out.println("No se ha encontrado un ejercicio.");
+        if (option == 1) {
+            Temperatura.main(args);
+        } else {
+            System.out.println("No se ha encontrado un ejercicio");
         }
     }
 }

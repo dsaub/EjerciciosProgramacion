@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Concatenar {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws IOException {
         System.out.print("Primer archivo: ");
         String path1 = sc.nextLine();

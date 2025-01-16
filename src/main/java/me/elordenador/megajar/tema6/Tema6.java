@@ -3,7 +3,6 @@ package me.elordenador.megajar.tema6;
 import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.tema6.contarletras.ContarLetras;
-import me.elordenador.megajar.tema6.contarletras.ContarLetras;
 import me.elordenador.megajar.tema6.descomponertexto.Descomponer;
 import me.elordenador.megajar.tema6.recomponertexto.RecomponerTexto;
 import me.elordenador.megajar.tema6.concatenar.Concatenar;
@@ -22,7 +21,7 @@ public class Tema6 {
             System.out.println("4. Concatenar");
             option = InputUtils.inputInt("Seleccione: ");
         } else {
-            String variable[] = args[0].split("\\.");
+            String[] variable = args[0].split("\\.");
             option = Integer.parseInt(variable[1]);
         }
 

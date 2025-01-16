@@ -2,12 +2,11 @@ package me.elordenador.megajar.tema6.recomponertexto;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class RecomponerTexto {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws IOException {
         System.out.print("Archivo: ");
         String path = sc.nextLine();

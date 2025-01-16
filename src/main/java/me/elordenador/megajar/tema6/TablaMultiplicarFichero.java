@@ -1,13 +1,12 @@
 package me.elordenador.megajar.tema6;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class TablaMultiplicarFichero {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
     private static String filePath;
     private static int n;
     public static void main(String[] args) throws IOException {

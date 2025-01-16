@@ -29,8 +29,7 @@ public class Bot {
     }
 
     public boolean regla1() {
-        if (tablero.try_to_take(1,1, state)) return true;
-        return false;
+        return tablero.try_to_take(1,1,state);
     }
     public boolean regla2() {
         // Checheo desde el centro:
@@ -120,7 +119,7 @@ public class Bot {
             if (tablero.try_to_take(1,0,state)) return true;
         }
         if (tablero.checkState(1,0,state) && tablero.checkState(2,0,state)) {
-            if (tablero.try_to_take(0,0,state)) return true;
+            return tablero.try_to_take(0,0,state);
         }
 
 
@@ -216,7 +215,7 @@ public class Bot {
             if (tablero.try_to_take(0,1,state)) return true;
         }
         if (tablero.checkState(0,1,enemyState) && tablero.checkState(0,2,enemyState)) {
-            if (tablero.try_to_take(0,0,state)) return true;
+            return tablero.try_to_take(0,0,state);
         }
 
 

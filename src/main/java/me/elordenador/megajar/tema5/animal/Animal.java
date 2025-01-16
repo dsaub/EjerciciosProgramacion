@@ -38,6 +38,8 @@ public class Animal {
     public int getEdad() {
         return edad;
     }
+
+    @Override
     public Animal clone() {
         return new Animal(nombre, edad);
     }

@@ -18,13 +18,13 @@ public class Tema5 {
             System.out.println("18. Sumar Matriz");
             option = InputUtils.inputInt("Seleccione: ");
         } else {
-            String variable[] = args[0].split("\\.");
+            String[] variable = args[0].split("\\.");
             option = Integer.parseInt(variable[1]);
         }
-
-        switch (option) {
-            case 8: Tester.main(args); break;
-            default: System.out.println("Ese numero es incorrecto");
+        if (option == 8) {
+            Tester.main(args);
+        } else {
+            System.out.println("Ese numero es incorrecto");
         }
     }
 }

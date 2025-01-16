@@ -19,7 +19,7 @@ public class MegaJAR {
             option = InputUtils.inputInt("Seleccione: ");
 
         } else {
-            String variable[] = args[0].split("\\.");
+            String[] variable = args[0].split("\\.");
             option = Integer.parseInt(variable[0]);
         }
 

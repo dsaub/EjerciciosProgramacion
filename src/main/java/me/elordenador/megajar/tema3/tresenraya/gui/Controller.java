@@ -1,9 +1,7 @@
 package me.elordenador.megajar.tema3.tresenraya.gui;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
@@ -18,10 +16,10 @@ import java.io.IOException;
 
 public class Controller {
     private boolean isPlaying = true;
-    private TresEnInterfaz tresEnInterfaz;
-    private AboutScene aScene;
+    private final TresEnInterfaz tresEnInterfaz;
+    private final AboutScene aScene;
     private Tablero tablero;
-    private Bot bot;
+    private final Bot bot;
     private boolean salida;
     public Controller() {
         aScene = new AboutScene();

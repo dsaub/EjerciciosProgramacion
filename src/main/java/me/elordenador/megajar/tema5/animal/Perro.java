@@ -26,6 +26,7 @@ public class Perro extends Animal {
             return raza;
         }
 
+        @Override
         public Perro clone() {
             return new Perro(getNombre(), getEdad(), raza);
         }
