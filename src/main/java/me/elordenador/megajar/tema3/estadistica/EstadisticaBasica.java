@@ -101,10 +101,10 @@ public class EstadisticaBasica {
         int index = array.toArray().length;
         if (index % 2 == 0) {
 
-            return (int) (Math.floor(index/2)/Math.floor(index/2)+1);
+            return (int) (Math.floor((double) index/2)/Math.floor((double) index/2)+1);
         }
         else {
-            return (int) Math.floor(index/2);
+            return (int) Math.floor((double) index/2);
         }
     }
 }

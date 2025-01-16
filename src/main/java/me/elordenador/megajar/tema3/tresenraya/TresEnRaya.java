@@ -114,7 +114,7 @@ public class TresEnRaya {
             }
             ScrUtils.clear();
             tablero.printTable();
-            int x = 0;
+            int x;
             int y = 0;
             System.out.println("Turno del jugador "+state);
             System.out.println("Dime las coordenadas X y Y separadas por coma sin espacio (x,y)");
@@ -187,7 +187,7 @@ public class TresEnRaya {
             }
             ScrUtils.clear();
             tablero.printTable();
-            int x = 0;
+            int x;
             int y = 0;
             System.out.println("Turno del jugador "+state);
             System.out.println("Dime las coordenadas X y Y separadas por coma sin espacio (x,y)");

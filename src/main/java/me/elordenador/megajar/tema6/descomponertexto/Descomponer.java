@@ -27,7 +27,11 @@ public class Descomponer {
 
         File archivo = new File(path);
         if (!archivo.exists()) {
-            archivo.createNewFile();
+            boolean fileCreated = archivo.createNewFile();
+            if (!fileCreated) {
+                System.err.println("No se pudo crear el archivo");
+                System.exit(23);
+            }
         }
 
         FileOutputStream out = new FileOutputStream(archivo);

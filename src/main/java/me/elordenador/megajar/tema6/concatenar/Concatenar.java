@@ -35,7 +35,10 @@ public class Concatenar {
             System.exit(3);
         }
         if (!outFile.exists()) {
-            outFile.createNewFile();
+            boolean fileCreated = outFile.createNewFile();
+            if (!fileCreated) {
+                System.err.println("Error al crear el archivo");
+            }
         }
 
         FileInputStream in1 = new FileInputStream(file1);

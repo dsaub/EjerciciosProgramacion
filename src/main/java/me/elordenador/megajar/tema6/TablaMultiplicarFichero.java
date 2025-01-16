@@ -26,7 +26,11 @@ public class TablaMultiplicarFichero {
 
         if (!file.exists()) {
             System.out.println("> El fichero no existe, creando...");
-            file.createNewFile();
+            boolean fileCreated = file.createNewFile();
+            if (!fileCreated) {
+                System.err.println("No se pudo crear el archivo, saliendo.");
+                System.exit(23);
+            }
         }
 
         FileOutputStream stream = new FileOutputStream(file);

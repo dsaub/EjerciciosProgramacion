@@ -14,6 +14,7 @@ public class pAudioPlayer extends AudioPlayer {
 
     public void playBackground() throws UnsupportedAudioFileException, LineUnavailableException, IOException {
         InputStream stream = getClass().getResourceAsStream("/me/elordenador/megajar/tema3/tresenraya/audio/background.wav");
+        assert stream != null;
         BufferedInputStream bufferedInputStream = new BufferedInputStream(stream);
         load(bufferedInputStream);
         play();

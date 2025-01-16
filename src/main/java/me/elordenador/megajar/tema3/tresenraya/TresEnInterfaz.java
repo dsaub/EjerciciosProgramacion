@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class TresEnInterfaz extends Application {
     private pAudioPlayer player;
     public static TresEnInterfaz instance;
@@ -19,7 +21,7 @@ public class TresEnInterfaz extends Application {
     public void start(Stage stage) throws Exception {
         instance = this;
         player = new pAudioPlayer();
-        Parent root = FXMLLoader.load(getClass().getResource("/me/elordenador/megajar/tema3/tresenraya/main.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/me/elordenador/megajar/tema3/tresenraya/main.fxml")));
 
         Scene scene = new Scene(root, 300, 275);
 

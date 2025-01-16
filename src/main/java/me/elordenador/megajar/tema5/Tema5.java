@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Tema5 {
     public static void main(String[] args) throws IGotTextException, IOException, InterruptedException, UnsupportedFlavorException {
         ScrUtils.clear();
-        int option = 0;
+        int option;
         if (args.length == 0) {
             System.out.println("16. Sumar Cifras");
             System.out.println("17. Permutar filas");

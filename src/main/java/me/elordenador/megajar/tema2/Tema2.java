@@ -9,7 +9,7 @@ public class Tema2 {
     public static void main(String[] args) throws IGotTextException {
         ScrUtils.clear();
 
-        int option = 0;
+        int option;
         if (args.length == 0) {
             System.out.println("Menu");
             System.out.println("1. Temperatura");

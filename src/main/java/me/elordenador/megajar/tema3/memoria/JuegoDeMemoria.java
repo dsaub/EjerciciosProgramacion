@@ -38,7 +38,7 @@ public class JuegoDeMemoria {
 
             System.out.println("Aqui tienes tu numero: "+generatedNumber);
             System.out.println("Desaparecerá pronto...");
-            Thread.sleep((10-dificultad)*1000);
+            Thread.sleep((10L-dificultad)*1000L);
             ScrUtils.clear();
             String clipboardData = (String) Toolkit.getDefaultToolkit().getSystemClipboard().getData(DataFlavor.stringFlavor);
             if (clipboardData.contains(generatedNumber)) Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection("Hey tramposo, pensabas que eso iba a ir?"), null);

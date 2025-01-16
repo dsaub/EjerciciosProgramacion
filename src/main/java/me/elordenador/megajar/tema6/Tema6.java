@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Tema6 {
     public static void main(String[] args) throws IGotTextException, IOException {
         ScrUtils.clear();
-        int option = 0;
+        int option;
         if (args.length == 0) {
             System.out.println("1. Tabla de Multiplicar");
             System.out.println("2. Descomponer");

@@ -28,7 +28,7 @@ import java.io.IOException;
 public class Tema3 {
     public static void main(String[] args) throws IGotTextException, IOException, InterruptedException, UnsupportedFlavorException {
         ScrUtils.clear();
-        int option = 0;
+        int option;
         if (args.length == 0) {
             System.out.println("Menu: ");
             System.out.println("1. Positivo y Negativo");
