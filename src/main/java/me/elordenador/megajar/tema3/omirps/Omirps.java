@@ -27,9 +27,12 @@ public class Omirps {
         if (PrimoUtil.esPrimo(Integer.parseInt(texto))) {
             String[] array = texto.split("");
             texto = "";
+            StringBuilder builder = new StringBuilder(texto);
             for (int i = array.length-1; i >= 0; i--) {
-                texto += array[i];
+                builder.append(array[i]);
             }
+
+            texto = builder.toString();
             System.out.println("Numero inverso: " + texto);
             if (PrimoUtil.esPrimo(Integer.parseInt(texto))) {
                 System.out.println("Es Omirps");

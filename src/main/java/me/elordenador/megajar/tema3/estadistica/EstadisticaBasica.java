@@ -28,9 +28,12 @@ public class EstadisticaBasica {
         }
         list.sort(Comparator.reverseOrder());
         String texto = "";
+        StringBuilder strBuilder = new StringBuilder(texto);
         for (int i : list) {
-            texto += i+" ";
+            strBuilder.append(i);
+            strBuilder.append(" ");
         }
+        texto = strBuilder.toString();
         System.out.println(texto);
         int maximo = getMax(list);
         int minimo = getMin(list);
@@ -100,8 +103,8 @@ public class EstadisticaBasica {
     public static int getMed(ArrayList<Integer> array) {
         int index = array.toArray().length;
         if (index % 2 == 0) {
-
-            return (int) (Math.floor((double) index/2)/Math.floor((double) index/2)+1);
+            index = index / 2;
+            return array.get(index);
         }
         else {
             return (int) Math.floor((double) index/2);

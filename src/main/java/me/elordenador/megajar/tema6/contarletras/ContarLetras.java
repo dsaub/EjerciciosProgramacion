@@ -46,7 +46,7 @@ public class ContarLetras {
             // 100 - max
             // n - x
 
-            double percentage = n * 100 / contadorMax;
+            double percentage = n * (double) 100 / (double) contadorMax;
             System.out.printf("%-10s %-25d %15.2f %%%n", key, n, percentage);
             //System.out.printf("%s                 %d                 %.2f%n    %%", key, n, percentage);
             //System.out.println("  " + key +".             "+n+"             " + percentage + " %");

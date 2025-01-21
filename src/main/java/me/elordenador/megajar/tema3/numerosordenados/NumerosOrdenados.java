@@ -23,9 +23,12 @@ public class NumerosOrdenados {
         }
         list.sort(Comparator.naturalOrder());
         String msg = "";
+        StringBuilder builder = new StringBuilder(msg);
         for (Integer i : list) {
-            msg += i+" ";
+            builder.append(i);
+            builder.append(" ");
         }
+        msg = builder.toString();
         System.out.println("Tus numeros ordenados: "+msg);
     }
 }

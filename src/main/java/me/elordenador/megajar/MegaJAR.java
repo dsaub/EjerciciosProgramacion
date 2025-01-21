@@ -12,6 +12,8 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
 
 public class MegaJAR {
+    public static final boolean debug = true;
+
     public static void main(String[] args) throws IGotTextException, IOException, InterruptedException, UnsupportedFlavorException {
         int option;
         if (args.length == 0) { // Comprobaremos si hay algun argumento ya que si lo hay podemos ir directamente al programa sin pasar por los menus

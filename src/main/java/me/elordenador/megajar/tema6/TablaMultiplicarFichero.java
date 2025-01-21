@@ -34,11 +34,18 @@ public class TablaMultiplicarFichero {
 
         FileOutputStream stream = new FileOutputStream(file);
         String tablaMultiplicar = "";
+        StringBuilder builder = new StringBuilder(tablaMultiplicar);
         System.out.println("> Generando texto...");
         for (int i = 1; i <= 10; i++) {
             System.out.println("FILE> " + n + " * " + i + " = " + (n*i));
-            tablaMultiplicar += n + " * " + i + " = " + (n*i) + "\n";
+            builder.append(n);
+            builder.append(" * ");
+            builder.append(i);
+            builder.append(" = ");
+            builder.append(n*i);
+            builder.append("\n");
         }
+        tablaMultiplicar = builder.toString();
 
         System.out.println("> Convirtiendo string a un array de char");
         char[] texto = tablaMultiplicar.toCharArray();

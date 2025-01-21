@@ -4,6 +4,7 @@ import me.elordenador.inpututils.IGotTextException;
 import me.elordenador.inpututils.InputUtils;
 import me.elordenador.megajar.tema6.contarletras.ContarLetras;
 import me.elordenador.megajar.tema6.descomponertexto.Descomponer;
+import me.elordenador.megajar.tema6.ligadefutbol.LigaFutbol;
 import me.elordenador.megajar.tema6.recomponertexto.RecomponerTexto;
 import me.elordenador.megajar.tema6.concatenar.Concatenar;
 import me.elordenador.megajar.utils.ScrUtils;
@@ -19,6 +20,7 @@ public class Tema6 {
             System.out.println("2. Descomponer");
             System.out.println("3. Recomponer");
             System.out.println("4. Concatenar");
+            System.out.println("13. Liga de Futbol");
             option = InputUtils.inputInt("Seleccione: ");
         } else {
             String[] variable = args[0].split("\\.");
@@ -31,6 +33,7 @@ public class Tema6 {
             case 3: RecomponerTexto.main(args); break;
             case 4: Concatenar.main(args); break;
             case 5: ContarLetras.main(args); break;
+            case 13: LigaFutbol.main(args); break;
 
             default: System.out.println("Ese numero es incorrecto");
         }

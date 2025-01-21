@@ -20,10 +20,12 @@ public class Descomponer {
 
         String[] palabras = texto.split(" ");
         texto = "";
+        StringBuilder builder = new StringBuilder(texto);
         for (String palabra : palabras) {
-            texto += palabra + "\n";
+            builder.append(palabra);
+            builder.append("\n");
         }
-
+        texto = builder.toString();
 
         File archivo = new File(path);
         if (!archivo.exists()) {

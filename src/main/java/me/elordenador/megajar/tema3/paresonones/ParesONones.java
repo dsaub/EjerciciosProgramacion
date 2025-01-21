@@ -12,6 +12,7 @@ import me.elordenador.megajar.utils.ScrUtils;
 public class ParesONones {
     public static void main(String[] args) throws IGotTextException {
         String texto = "";
+        StringBuilder builder = new StringBuilder(texto);
         int intercambio;
 
         ScrUtils.clear();
@@ -33,7 +34,8 @@ public class ParesONones {
                 primerNumero++;
             }
             for (int i = primerNumero; i <= segundoNumero; i+=2) {
-                texto += i+" ";
+                builder.append(i);
+                builder.append(" ");
             }
             System.out.println("Tus numeros: "+texto);
         } else if (sel.equals("IMPARES")) {
@@ -42,8 +44,10 @@ public class ParesONones {
                 primerNumero++;
             }
             for (int i = primerNumero; i <= segundoNumero; i+=2) {
-                texto += i+" ";
+                builder.append(i);
+                builder.append(" ");
             }
+            texto = builder.toString();
             System.out.println("Tus numeros: "+texto);
         } else {
             System.out.println("A la proxima vez escribe PARES O IMPARES");
